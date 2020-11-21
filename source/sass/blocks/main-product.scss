@@ -1,0 +1,32 @@
+.main-product {
+  background-image: url(../../img/main-product-background-320.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-product__wrapper{
+padding-top: 5px;
+padding-bottom: 10px;
+height: 100%;
+//overflow: hidden;
+}
+
+.main-product__title {
+  font-size: $h1-size;
+  line-height: $h1-size;
+  font-weight: normal;
+  font-family: "Oswald";
+  color: #000000;
+}
+
+.main-product__promo {
+  text-transform: uppercase;
+  font-family: "Oswald";
+}
+
+.main-product__button {
+  widht: 280px;
+  height: 40px;
+  margin-top: 40px;
+}

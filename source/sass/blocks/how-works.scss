@@ -1,0 +1,40 @@
+.how-works{
+  padding: 0px 20px;
+  //background-color: $color-basic-green;
+}
+
+.how-works__title {
+  font-size: 36px;
+  font-weight: normal;
+  font-family: "Oswald";
+  color: #000000;
+}
+
+.how-works__list {
+  list-style: none;
+  padding: 15px 0px;
+}
+
+.how-works__item {
+  padding: 3px 0px 25px 80px;
+}
+
+.how-works__item--natural {
+  background-image: url(../../img/how-works__item--natural-320.png);
+  background-repeat: no-repeat;
+}
+
+.how-works__item--form {
+  background-image: url(../../img/how-works__item--form-320.png);
+  background-repeat: no-repeat;
+}
+
+.how-works__item--food {
+  background-image: url(../../img/how-works__item--food-320.png);
+  background-repeat: no-repeat;
+}
+
+.how-works__item--time {
+  background-image: url(../../img/how-works__item--time-320.png);
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,23 @@
+.page-footer {
+  background-color: $color-basic-grey;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.socials__list {
+  list-style: none;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px;
+}
+
+.page-footer__cut-logo {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 25px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}

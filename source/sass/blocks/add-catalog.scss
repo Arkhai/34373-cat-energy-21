@@ -1,0 +1,37 @@
+.add-catalog {
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.add-catalog__title {
+  text-transform: initial;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.add-catalog__list {
+  list-style: none;
+  padding: 0px;
+}
+
+.add-product__title {
+  font-family: "Oswald";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.add-catalog__item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.description__wrapper {
+  padding-bottom: 10px;
+}
+
+.add-product__button {
+  width: 100%;
+}

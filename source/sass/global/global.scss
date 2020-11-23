@@ -1,0 +1,67 @@
+// Начните писать стили здесь
+.page {
+  height: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Arial;
+  color: $color-special-dark-grey;
+}
+
+.page__body {
+  max-width: 320px;
+  margin: 0 auto;
+  //color: #000000;
+  background-color: $color-background;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  max-width: 100%;
+  padding: 15px 75px;
+  //box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  color: #ffffff;
+  background-color: $color-basic-green;
+  text-decoration: none;
+  line-height: 18px;
+  border: 0px;
+}
+
+.button--with-arrow {
+  background-color: $color-basic-grey;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  border-top: 1px solid #d9d9d9;
+  padding-left: 0px;
+  padding-right: 150px;
+}
+
+.button--grey {
+  background-color: $color-basic-grey;
+  color: $color-special-dark-grey;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.slider__toggler {
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 20px;
+  text-align: center;
+}

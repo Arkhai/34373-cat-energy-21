@@ -34,10 +34,13 @@
   font-family: "Oswald";
   text-transform: uppercase;
   font-size: 16px;
+  display: block;
+  padding-bottom: 20px;
 }
 
 .description__element {
   font-size: 12px;
+  line-height: 8px;
 }
 
 .catalog__item a {
@@ -65,4 +68,10 @@
 
 .show-more__button {
   width: 100%;
+  margin-top: 10px;
+}
+
+.show-more__wrapper {
+  width: 100%;
+  text-align: center;
 }

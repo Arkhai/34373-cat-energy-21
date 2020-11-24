@@ -1,6 +1,6 @@
 .form {
   padding: 20px;
-  font-family: "Oswald";
+  font-family: "Oswald", serif;
   color: #000000;
 }
 
@@ -53,19 +53,36 @@ textarea {
   text-transform: uppercase;
   color: $color-special-dark-grey;
   border: 1px solid #e7e7e7;
-  width: 100%;
+  width: 95%;
   height: 120px;
   padding: 10px;
 }
 
-.form_programm {
+.form__programm {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
 }
 
+.form__programm-item {
+  padding: 10px 0px;
+}
 
 .form__requirement {
   font-family: Arial;
+  text-align: center;
 }
 
+.form__add-info {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__add-info-item {
+  padding: 10px 0px;
+}
+
+.form__button {
+  width: 100%;
+}

@@ -6,35 +6,87 @@
 .how-works__title {
   font-size: 36px;
   font-weight: normal;
-  font-family: "Oswald";
+  font-family: $oswald;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .how-works__list {
   list-style: none;
   padding: 15px 0px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .how-works__item {
   padding: 3px 0px 25px 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 34%;
+    padding-top: 100px;
+    padding-left: 0;
+    padding-bottom: 110px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+  }
 }
 
 .how-works__item--natural {
   background-image: url(../../img/how-works__item--natural-320.png);
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../../img/how-works__item--natural-tablet.png), url(../../img/1-tablet.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+  }
 }
 
 .how-works__item--form {
   background-image: url(../../img/how-works__item--form-320.png);
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../../img/how-works__item--form-tablet.png), url(../../img/2-tablet.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+  }
 }
 
 .how-works__item--food {
   background-image: url(../../img/how-works__item--food-320.png);
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../../img/how-works__item--food-tablet.png), url(../../img/3-tablet.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+  }
 }
 
 .how-works__item--time {
   background-image: url(../../img/how-works__item--time-320.png);
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../../img/how-works__item--time-tablet.png), url(../../img/4-tablet.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+  }
 }

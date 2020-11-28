@@ -1,7 +1,11 @@
 .form {
   padding: 20px;
-  font-family: "Oswald", serif;
+  font-family: $oswald;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+  }
 }
 
 .form__style {
@@ -9,15 +13,33 @@
   border: 0px;
   text-transform: uppercase;
   font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .form__style--with-line {
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $desktop-width) {
+    border: 0;
+  }
 }
 
 .form__title-main {
   font-size: 36px;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: -40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .form__description {
@@ -25,6 +47,11 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 20px 0px 0px 0px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__title {
@@ -33,6 +60,17 @@
   font-size: 24px;
   line-height: 24px;
   padding: 15px 0px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form__contact-title br {
+  @media (min-width: $tablet-width) {
+    display:none;
+  }
 }
 
 .form__item {
@@ -40,6 +78,10 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $color-special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 input {
@@ -62,6 +104,10 @@ textarea {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    border: 1px solid #d9d9d9;
+  }
 }
 
 .form__programm-item {
@@ -85,4 +131,29 @@ textarea {
 
 .form__button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+    margin-right: 30px;
+  }
+}
+
+.form__button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.form__application-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__application-add-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

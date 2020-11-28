@@ -1,16 +1,22 @@
-// Начните писать стили здесь
+@charset 'utf-8';
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .page {
   height: 100%;
   font-size: 14px;
   line-height: 18px;
-  font-family: Arial;
+  font-family: $arial;
   color: $color-special-dark-grey;
 }
 
 .page__body {
-  max-width: 320px;
-  margin: 0 auto;
-  //color: #000000;
+  //max-width: 320px;
+  min-height: 100%;
+  margin: 0;
   background-color: $color-background;
 }
 
@@ -32,12 +38,12 @@
   padding: 15px 75px;
   //box-sizing: border-box;
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: $oswald;
   color: #ffffff;
   background-color: $color-basic-green;
   text-decoration: none;
   line-height: 18px;
-  border: 0px;
+  border: 0;
 }
 
 .button--with-arrow {
@@ -48,6 +54,11 @@
   border-top: 1px solid #d9d9d9;
   padding-left: 0px;
   padding-right: 150px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    border-top: 0px;
+  }
 }
 
 .button--grey {
@@ -61,7 +72,8 @@
 
 .slider__toggler {
   color: #000000;
-  font-family: "Oswald";
+  font-family: $oswald;
   font-size: 20px;
   text-align: center;
 }
+

@@ -1,32 +1,104 @@
 .main-product {
-  background-image: url(../../img/main-product-background-320.png);
+  background-image: url(../../img/main-product-back-320.png);
   background-repeat: no-repeat;
+  background-size: 100% auto;
   text-align: center;
   color: #ffffff;
+
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url(../../img/main-product-back-desktop.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top: 100px;
+    min-height: 596px;
+  }
 }
 
 .main-product__wrapper{
 padding-top: 5px;
 padding-bottom: 10px;
-height: 100%;
+min-height: 100%;
 //overflow: hidden;
 }
 
 .main-product__title {
-  font-size: $h1-size;
-  line-height: $h1-size;
+  font-size: 36px;
+  line-height: 36px;
   font-weight: normal;
-  font-family: "Oswald";
+  font-family: $oswald;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 85px;
+  }
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .main-product__promo {
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: $oswald;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .main-product__button {
-  widht: 280px;
-  height: 40px;
-  margin-top: 40px;
+  margin: 5px 20px;
+  //margin-top: 70px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 390px;
+    left: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 244px;
+    top: auto;
+    z-index: 2;
+  }
+
+}
+
+.main-product__photo {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 709px;
+    min-height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+    max-height: 250px;
+    position: absolute;
+    left: 25%;
+    top: 150px;
+    z-index: 1;
+  }
+
 }

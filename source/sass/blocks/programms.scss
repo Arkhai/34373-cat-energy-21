@@ -1,10 +1,11 @@
 .programms {
   padding: 15px 20px 5px 20px;
 }
-.programms__list{
-  padding: 0px;
 
-  @media (min-width: $desktop-width){
+.programms__list {
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,37 +49,36 @@
 }
 
 .programms__title--slim {
-  background-image: url(../../img/programms__title--slim-320.png);
+  background-image: url("../../img/programms__title--slim-320.png");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/programms__title--slim-tablet.png);
+    background-image: url("../../img/programms__title--slim-tablet.png");
     background-position: top right;
-    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url(../../img/programms__title--slim-desktop.png);
+    background-image: url("../../img/programms__title--slim-desktop.png");
     background-position: left;
     padding-left: 120px;
   }
 }
 
 .programms__title--pro {
-  background-image: url(../../img/programms__title--pro-320.png);
+  background-image: url("../../img/programms__title--pro-320.png");
   background-repeat: no-repeat;
   margin-left: -10px;
   padding-left: 80px;
 
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/programms__title--pro-tablet.png);
+    background-image: url("../../img/programms__title--pro-tablet.png");
     background-position: top right;
     margin-left: 0;
     padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url(../../img/programms__title--pro-desktop.png);
+    background-image: url("../../img/programms__title--pro-desktop.png");
     background-position: left;
     padding-left: 120px;
   }
@@ -91,8 +91,4 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
   }
-}
-
-.programms__link{
-
 }

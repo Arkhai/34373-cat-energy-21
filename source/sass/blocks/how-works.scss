@@ -1,6 +1,5 @@
-.how-works{
-  padding: 0px 20px;
-  //background-color: $color-basic-green;
+.how-works {
+  padding: 0 20px;
 }
 
 .how-works__title {
@@ -16,7 +15,7 @@
 
 .how-works__list {
   list-style: none;
-  padding: 15px 0px;
+  padding: 15px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -31,7 +30,7 @@
 }
 
 .how-works__item {
-  padding: 3px 0px 25px 80px;
+  padding: 3px 0 25px 80px;
 
   @media (min-width: $tablet-width) {
     width: 34%;
@@ -48,44 +47,44 @@
 }
 
 .how-works__item--natural {
-  background-image: url(../../img/how-works__item--natural-320.png);
+  background-image: url("../../img/how-works__item--natural-320.png");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/how-works__item--natural-tablet.png), url(../../img/1-tablet.png);
+    background-image: url("../../img/how-works__item--natural-tablet.png"), url("../../img/1-tablet.png");
     background-repeat: no-repeat;
     background-position: top left, top right;
   }
 }
 
 .how-works__item--form {
-  background-image: url(../../img/how-works__item--form-320.png);
+  background-image: url("../../img/how-works__item--form-320.png");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/how-works__item--form-tablet.png), url(../../img/2-tablet.png);
+    background-image: url("../../img/how-works__item--form-tablet.png"), url("../../img/2-tablet.png");
     background-repeat: no-repeat;
     background-position: top left, top right;
   }
 }
 
 .how-works__item--food {
-  background-image: url(../../img/how-works__item--food-320.png);
+  background-image: url("../../img/how-works__item--food-320.png");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/how-works__item--food-tablet.png), url(../../img/3-tablet.png);
+    background-image: url("../../img/how-works__item--food-tablet.png"), url("../../img/3-tablet.png");
     background-repeat: no-repeat;
     background-position: top left, top right;
   }
 }
 
 .how-works__item--time {
-  background-image: url(../../img/how-works__item--time-320.png);
+  background-image: url("../../img/how-works__item--time-320.png");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/how-works__item--time-tablet.png), url(../../img/4-tablet.png);
+    background-image: url("../../img/how-works__item--time-tablet.png"), url("../../img/4-tablet.png");
     background-repeat: no-repeat;
     background-position: top left, top right;
   }

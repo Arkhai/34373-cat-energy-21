@@ -1,7 +1,54 @@
 .page-footer {
   background-color: $color-basic-grey;
-  text-align: center;
   padding: 10px 20px;
+}
+
+.page-footer__coop-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 50px;
+  }
+}
+
+.page-footer__coop-wrapper--white {
+  background-color: #ffffff;
+}
+
+.page-footer__coop-title {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-family: $oswald;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+.page-footer__coop-address {
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.page-footer__map-wrapper {
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+  }
 }
 
 .page-footer__wrapper {
@@ -34,7 +81,6 @@
 }
 
 .page-footer__copyright {
-  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;

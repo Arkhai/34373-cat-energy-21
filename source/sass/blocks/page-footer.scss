@@ -1,12 +1,13 @@
 .page-footer {
   background-color: $color-basic-grey;
-  padding: 10px 20px;
 }
 
 .page-footer__coop-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     padding: 20px 50px;
@@ -20,7 +21,7 @@
 .page-footer__coop-title {
   font-size: 16px;
   font-weight: normal;
-  line-height: 28px;
+  line-height: 18px;
   font-family: $oswald;
   text-transform: uppercase;
 
@@ -41,6 +42,9 @@
 
 .page-footer__map-wrapper {
   min-height: 362px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
@@ -51,7 +55,15 @@
   }
 }
 
+.page-footer__map-wrapper img {
+  margin: 0 auto;
+  align-items: center;
+}
+
 .page-footer__wrapper {
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -63,7 +75,12 @@
 .socials__list {
   list-style: none;
   border-bottom: 1px solid #d9d9d9;
-  padding: 20px;
+  //padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 50px 17px 50px;
 
   @media (min-width: $tablet-width) {
     border: 0;
@@ -72,7 +89,9 @@
 
 .page-footer__cut-logo {
   border-bottom: 1px solid #d9d9d9;
-  padding: 25px;
+  padding: 29px;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     border: 0;
@@ -80,10 +99,26 @@
   }
 }
 
+//.socials__link--vkontakte {
+//  background-image: url("../../img/icon_vkontakte.png");
+//  background-repeat: no-repeat;
+//}
+
+//.socials__link--instagram {
+//  background-image: url("../../img/icon_instagram.png");
+//  background-repeat: no-repeat;
+//}
+
+//.socials__link--facebook {
+//  background-image: url("../../img/icon_facebook.png");
+//  background-repeat: no-repeat;
+//}
+
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 8px;
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {

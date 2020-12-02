@@ -124,7 +124,7 @@
 }
 
 .show-more__title br {
-  @media (min-width: $mobile-width){
+  @media (min-width: $mobile-width) {
     display: none;
   }
 
@@ -161,7 +161,7 @@
 }
 
 .show-more__description br {
-  @media (min-width: $mobile-width){
+  @media (min-width: $mobile-width) {
     display: none;
   }
 
@@ -178,5 +178,3 @@
     margin-top: 95px;
   }
 }
-
-

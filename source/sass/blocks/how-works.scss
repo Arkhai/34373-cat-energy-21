@@ -4,6 +4,7 @@
 
 .how-works__title {
   font-size: 36px;
+  line-height: 34px;
   font-weight: normal;
   font-family: $oswald;
   color: #000000;
@@ -15,7 +16,7 @@
 
 .how-works__list {
   list-style: none;
-  padding: 15px 0;
+  padding: 10px 0 5px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -30,7 +31,7 @@
 }
 
 .how-works__item {
-  padding: 3px 0 25px 80px;
+  padding: 2px 0 25px 82px;
 
   @media (min-width: $tablet-width) {
     width: 34%;

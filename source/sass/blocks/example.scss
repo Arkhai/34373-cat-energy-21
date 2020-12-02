@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
@@ -28,7 +28,7 @@
 }
 
 .example__description {
-  padding: 15px 0;
+  padding: 15px 0 10px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -87,7 +87,7 @@
   line-height: 12px;
   background-color: #eaeaea;
   position: absolute;
-  margin-top: -10px;
+  margin-top: -8px;
   margin-left: 30px;
   padding: 0 5px;
 
@@ -127,7 +127,7 @@
 .example__cat-list {
   list-style: none;
   padding: 0;
-  margin: -15px;
+  margin: 0 -18px;
 
   @media (min-width: $tablet-width) {
     background-color: #eaeaea;
@@ -138,4 +138,87 @@
   @media (min-width: $tablet-width) {
     min-width: 700px;
   }
+}
+
+.slider__toggle-wrapper {
+  padding-left: 45px;
+  padding-right: 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -40px;
+}
+
+.slider__toggle-label {
+  font-family: $oswald;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.slider__toggler {
+  color: #000000;
+  font-family: $oswald;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 84px; /* Specific width is required for Firefox. */
+  height: 14px;
+  border-radius: 50px;
+  padding: 0 4px;
+  background: #ffffff; /* Otherwise white in Chrome */
+  border: 1px solid $color-special-grey;
+}
+
+input[type="range"]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type="range"]::-ms-track {
+  width: 84px;
+  height: 14px;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  //border: 1px solid red;
+  height: 6px;
+  width: 35px;
+  border-radius: 10px;
+  background: $color-basic-green;
+  cursor: pointer;
+  //margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  //box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+input[type="range"]::-moz-range-thumb {
+  //box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  //border: 1px solid red;
+  height: 6px;
+  width: 35px;
+  border-radius: 10px;
+  background: $color-basic-green;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type="range"]::-ms-thumb {
+  //box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  //border: 1px solid red;
+  height: 6px;
+  width: 35px;
+  border-radius: 10px;
+  background: $color-basic-green;
+  cursor: pointer;
 }
